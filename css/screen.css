@@ -3,7 +3,7 @@ body {
 	padding:0;
 	border:0;			/* This removes the border around the viewport in old versions of IE */
 	width:100%;
-	background:#dddce7;
+	background:#a3a3a3;
 	min-width:600px;		/* Minimum width of layout - remove line if not required */
 					/* The min-width property does not work in old versions of Internet Explorer */
 }
@@ -87,6 +87,14 @@ img {
 		width:100%;			/* width of whole page */
 		overflow:hidden;		/* This chops off any overhanging divs */
 	}
+	.fullwidth {
+			clear:both;
+		float:left;
+		width:96%;			/* width of whole page minus padding on both sides */
+		overflow:hidden;		/* This chops off any overhanging divs */
+			background:#a3a3a3a;
+			padding:2%;
+	}
 	/* common column settings */
 	.colright,
 	.colmid,
@@ -106,24 +114,22 @@ img {
 
 	/* 2 Column (double page) settings */
 	.doublepage {
-		background:#c16528;		/* right column background colour */
 		color:#ffffff;
+		background:#c16528;		/* right column background colour */
 	}
 	.doublepage .colleft {
 		right:33%;			/* right column width */
+
 	}
 	.doublepage .col1 {
 		width:62%;			/* left column content width (column width minus left and right padding) */
 		left:35%;			/* right column width plus left column left padding */
 		font-size:120%;
+
 	}
 	.doublepage .col2 {
 		width:29%;			/* right column content width (column width minus left and right padding) */
 		left:39%;			/* (right column width) plus (left column left and right padding) plus (right column left padding) */
-	}
-	.doublepage .col3 {
-	padding: 2%;
-	background:#a3a3a3a;
 	}
 
 /* Footer styles */
@@ -131,11 +137,23 @@ img {
 	clear:both;
 	float:left;
 	width:100%;
-	border-top:1px solid #000;
-		background:#d35c4c;
+		background:#9c9b7a;
 
 }
 #footer p {
+	padding:10px;
+	margin:0;
+}
+
+/* Footer styles */
+#footer2 {
+	clear:both;
+	float:left;
+	width:100%;
+		background:#585841;
+
+}
+#footer2 p {
 	padding:10px;
 	margin:0;
 }
