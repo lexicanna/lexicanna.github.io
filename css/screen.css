@@ -1,159 +1,163 @@
 body {
-	margin:0;
-	padding:0;
-	border:0;			/* This removes the border around the viewport in old versions of IE */
-	width:100%;
-	background:#a3a3a3;
-	min-width:600px;		/* Minimum width of layout - remove line if not required */
-					/* The min-width property does not work in old versions of Internet Explorer */
+    margin: 0;
+    padding: 0;
+    border: 0; /* This removes the border around the viewport in old versions of IE */
+    width: 100%;
+    background: #a3a3a3;
+    min-width: 600px; /* Minimum width of layout - remove line if not required */
+    /* The min-width property does not work in old versions of Internet Explorer */
 }
-a {
-	color:#369;
-}
-a:hover {
-	color:#fff;
-	background:#369;
-	text-decoration:none;
-}
+
 h1, h2, h3 {
-	margin:.8em 0 .2em 0;
-	padding:0;
+    margin: .8em 0 .2em 0;
+    padding: 0;
 }
+
 p {
-	margin:.4em 0 .8em 0;
-	padding:0;
+    margin: .4em 0 .8em 0;
+    padding: 0;
 }
+
 img {
-	margin:10px 0 5px;
+    margin: 10px 0 5px;
 }
 
 /* Header styles */
 #header {
-	clear:both;
-	float:left;
-	width:100%;
-		background:#9c9b7a;
+    clear: both;
+    float: left;
+    width: 100%;
+    background: #9c9b7a;
 }
+
 #header p,
 #header h1,
 #header h2 {
-	padding:.4em 15px 0 15px;
-	margin:0;
+    padding: .4em 15px 0 15px;
+    margin: 0;
 }
-#header ul {
-	clear:left;
-	float:left;
-	width:100%;
-	list-style:none;
-	margin:10px 0 0 0;
-	padding:0;
-}
-#header ul li {
-	display:inline;
-	list-style:none;
-	margin:0;
-	padding:0;
-}
-#header ul li a {
-	display:block;
-	float:left;
-	margin:0 0 0 1px;
-	padding:3px 10px;
-	text-align:center;
-	background:#eee;
-	color:#000;
-	text-decoration:none;
-	position:relative;
-	left:15px;
-	line-height:1.3em;
-}
-#header ul li a:hover {
-	background:#369;
-	color:#fff;
-}
-#header ul li a.active,
-#header ul li a.active:hover {
-	color:#fff;
-	background:#000;
-	font-weight:bold;
-}
-#header ul li a span {
-	display:block;
-}
-	/* column container */
-	.colmask {
-		clear:both;
-		float:left;
-		width:100%;			/* width of whole page */
-		overflow:hidden;		/* This chops off any overhanging divs */
-	}
-	.fullwidth {
-			clear:both;
-		float:left;
-		width:96%;			/* width of whole page minus padding on both sides */
-		overflow:hidden;		/* This chops off any overhanging divs */
-			background:#a3a3a3a;
-			padding:2%;
-	}
-	/* common column settings */
-	.colright,
-	.colmid,
-	.colleft {
-		float:left;
-		width:100%;
-		position:relative;
-	}
-	.col1,
-	.col2,
-	.col3 {
-		float:left;
-		position:relative;
-		padding:0 0 1% 0;
-		overflow:hidden;
-	}
 
-	/* 2 Column (double page) settings */
-	.doublepage {
-		color:#ffffff;
-		background:#c16528;		/* right column background colour */
-	}
-	.doublepage .colleft {
-		right:33%;			/* right column width */
+#header2 {
+    clear: both;
+    float: left;
+    width: 100%;
+    background: #585841;
+    padding: 0 15px 10px 15px;
 
-	}
-	.doublepage .col1 {
-		width:62%;			/* left column content width (column width minus left and right padding) */
-		left:35%;			/* right column width plus left column left padding */
-		font-size:120%;
+}
 
-	}
-	.doublepage .col2 {
-		width:29%;			/* right column content width (column width minus left and right padding) */
-		left:39%;			/* (right column width) plus (left column left and right padding) plus (right column left padding) */
-	}
+#header2 h2 {
+    width: 100%;
+    text-align: center;
+    color: rgb(220, 220, 220);
+}
 
-/* Footer styles */
+/* column container */
+.colmask {
+    clear: both;
+    float: left;
+    width: 100%; /* width of whole page */
+    overflow: hidden; /* This chops off any overhanging divs */
+}
+
+/* common column settings */
+.colright,
+.colmid,
+.colleft {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.col1,
+.col2 {
+    float: left;
+    position: relative;
+    padding: 3% 0 1% 0;
+    overflow: hidden;
+}
+
+/* 2 Column (double page) settings */
+.doublepage {
+    color: rgb(220, 220, 220);
+    background: #c16528; /* right column background colour */
+}
+
+.doublepage .colleft {
+    right: 33%; /* right column width */
+
+}
+
+.doublepage .col1 {
+    width: 62%; /* left column content width (column width minus left and right padding) */
+    left: 35%; /* right column width plus left column left padding */
+    font-size: 120%;
+
+}
+
+.doublepage .col2 {
+    width: 29%; /* right column content width (column width minus left and right padding) */
+    left: 39%; /* (right column width) plus (left column left and right padding) plus (right column left padding) */
+}
+
+#fullwidth {
+    clear: both;
+    float: left;
+    width: 96%; /* width of whole page minus padding on both sides */
+    overflow: hidden; /* This chops off any overhanging divs */
+    background: #a3a3a3;
+    padding: 2%;
+}
+
 #footer {
-	clear:both;
-	float:left;
-	width:100%;
-		background:#9c9b7a;
+    clear: both;
+    float: left;
+    width: 100%;
+    background: #9c9b7a;
 
 }
+
 #footer p {
-	padding:10px;
-	margin:0;
+    padding: 20px 5px 20px 5px;
+    margin: 0;
+    text-align: center;
 }
 
-/* Footer styles */
 #footer2 {
-	clear:both;
-	float:left;
-	width:100%;
-		background:#585841;
+    clear: both;
+    float: left;
+    width: 100%;
+    background: #585841;
 
 }
-#footer2 p {
-	padding:10px;
-	margin:0;
+
+#footer2 ul{
+    width: 100%;
+    text-align: center;
+}
+
+
+.navlist li {
+    display: inline-block;
+    list-style-type: none;
+    vertical-align: middle;
+}
+
+.navlist a
+{
+padding: 5px 10px 5px 10px;
+color: #101010;
+text-decoration: none;
+}
+
+.navlist a:hover
+{
+background-color: #585841;
+color: white;
+}
+
+.navlist .nohover a:hover {
+    text-decoration: none;
+    color:black;
+    background-color: #9c9b7a;
 }
